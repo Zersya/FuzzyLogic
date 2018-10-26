@@ -215,127 +215,131 @@ class KepalaKeluarga:
         self.hig = [0]
 
         if self.nilai_derajat_keanggotaan_pendapatan_SB and self.nilai_derajat_keanggotaan_hutang_SB:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_SB])
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_SB])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_SB and self.hutang_banyak:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_banyak])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_SB and self.nilai_derajat_keanggotaan_hutang_banyak:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_banyak])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_SB and self.hutang_sedang:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_sedang])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_SB and self.nilai_derajat_keanggotaan_hutang_sedang:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_sedang])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_SB and self.hutang_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_TB])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_SB and self.nilai_derajat_keanggotaan_hutang_TB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_TB])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_SB and self.hutang_sangat_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_STB])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_SB and self.nilai_derajat_keanggotaan_hutang_STB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_SB, self.nilai_derajat_keanggotaan_hutang_STB])
             self.low = []
-            self.low.append(getMaxVal)
+            self.low.append(getminVal)
 
         if self.nilai_derajat_keanggotaan_pendapatan_Baik and self.nilai_derajat_keanggotaan_hutang_SB:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_SB])
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_SB])
             self.med = []
-            self.med.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_Baik and self.hutang_banyak:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_banyak])
+            self.med.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_Baik and self.nilai_derajat_keanggotaan_hutang_banyak:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_banyak])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_Baik and self.hutang_sedang:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_sedang])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_Baik and self.nilai_derajat_keanggotaan_hutang_sedang:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_sedang])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_Baik and self.hutang_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_TB])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_Baik and self.nilai_derajat_keanggotaan_hutang_TB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_TB])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_Baik and self.hutang_sangat_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_STB])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_Baik and self.nilai_derajat_keanggotaan_hutang_STB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Baik, self.nilai_derajat_keanggotaan_hutang_STB])
             self.low = []
-            self.low.append(getMaxVal)
+            self.low.append(getminVal)
 
         if self.nilai_derajat_keanggotaan_pendapatan_Biasa and self.nilai_derajat_keanggotaan_hutang_SB:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_SB])
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_SB])
             self.med = []
-            self.med.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_Biasa and self.hutang_banyak:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_banyak])
+            self.med.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_Biasa and self.nilai_derajat_keanggotaan_hutang_banyak:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_banyak])
             self.med = []
-            self.med.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_Biasa and self.hutang_sedang:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_sedang])
+            self.med.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_Biasa and self.nilai_derajat_keanggotaan_hutang_sedang:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_sedang])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_Biasa and self.hutang_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_TB])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_Biasa and self.nilai_derajat_keanggotaan_hutang_TB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_TB])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_Biasa and self.hutang_sangat_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_STB])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_Biasa and self.nilai_derajat_keanggotaan_hutang_STB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_Biasa, self.nilai_derajat_keanggotaan_hutang_STB])
             self.low = []
-            self.low.append(getMaxVal)
+            self.low.append(getminVal)
 
         if self.nilai_derajat_keanggotaan_pendapatan_TB and self.nilai_derajat_keanggotaan_hutang_SB:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_SB])
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_SB])
             self.hig = []
-            self.hig.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_TB and self.hutang_banyak:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_banyak])
+            self.hig.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_TB and self.nilai_derajat_keanggotaan_hutang_banyak:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_banyak])
             self.med = []
-            self.med.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_TB and self.hutang_sedang:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_sedang])
+            self.med.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_TB and self.nilai_derajat_keanggotaan_hutang_sedang:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_sedang])
             self.med = []
-            self.med.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_TB and self.hutang_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_TB])
+            self.med.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_TB and self.nilai_derajat_keanggotaan_hutang_TB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_TB])
             self.low = []
-            self.low.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_TB and self.hutang_sangat_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_STB])
+            self.low.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_TB and self.nilai_derajat_keanggotaan_hutang_STB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_TB, self.nilai_derajat_keanggotaan_hutang_STB])
             self.low = []
-            self.low.append(getMaxVal)
+            self.low.append(getminVal)
 
         if self.nilai_derajat_keanggotaan_pendapatan_STB and self.nilai_derajat_keanggotaan_hutang_SB:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_SB])
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_SB])
             self.hig = []
-            self.hig.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_STB and self.hutang_banyak:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_banyak])
+            self.hig.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_STB and self.nilai_derajat_keanggotaan_hutang_banyak:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_banyak])
             self.hig = []
-            self.hig.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_STB and self.hutang_sedang:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_sedang])
+            self.hig.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_STB and self.nilai_derajat_keanggotaan_hutang_sedang:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_sedang])
             self.hig = []
-            self.hig.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_STB and self.hutang_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_TB])
+            self.hig.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_STB and self.nilai_derajat_keanggotaan_hutang_TB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_TB])
             self.med = []
-            self.med.append(getMaxVal)
-        if self.nilai_derajat_keanggotaan_pendapatan_STB and self.hutang_sangat_sedikit:
-            getMaxVal = max([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_STB])
+            self.med.append(getminVal)
+        if self.nilai_derajat_keanggotaan_pendapatan_STB and self.nilai_derajat_keanggotaan_hutang_STB:
+            getminVal = min([self.nilai_derajat_keanggotaan_pendapatan_STB, self.nilai_derajat_keanggotaan_hutang_STB])
             self.low = []
-            self.low.append(getMaxVal)
+            self.low.append(getminVal)
         
         if len(self.low) > 1:
-            getMinVal = min(self.low)
+            getmaxVal = max(self.low)
             self.low = []
-            self.low[0] = getMinVal
+            self.low[0] = getmaxVal
         if len(self.med) > 1:
-            getMinVal = min(self.med)
+            getmaxVal = max(self.med)
             self.med = []
-            self.med[0] = getMinVal
+            self.med[0] = getmaxVal
         if len(self.hig) > 1:
-            getMinVal = min(self.hig)
+            getmaxVal = max(self.hig)
             self.hig = []
-            self.hig[0] = getMinVal
+            self.hig[0] = getmaxVal
 
     #defuzzyfication
     def sugeno(self):
         k = [2, 10, 20]
-        return ((k[0] * self.low[0]) + (k[1] * self.med[0]) + (k[2] * self.hig[0]))/(self.low[0] + self.med[0] + self.hig[0])
+
+        if(self.low[0] == 0 and self.med[0] == 0 and self.hig[0] == 0):
+            return 0
+        else:
+            return ((k[0] * self.low[0]) + (k[1] * self.med[0]) + (k[2] * self.hig[0]))/(self.low[0] + self.med[0] + self.hig[0])
 
     def defuzzyfication(self):
         y = self.sugeno()
