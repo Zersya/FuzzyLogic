@@ -11,7 +11,7 @@ class KepalaKeluarga:
         self.pendapatan_tidak_baik           = [0.3, 0.5, 0.7, 0.9]
         self.pendapatan_sangat_tidak_baik    = [0, 0.25, 0.35, 0.5]
 
-        self.hutang_sangat_banyak          = [70, 78, 80, 98]
+        self.hutang_sangat_banyak          = [70, 78, 80, 100]
         self.hutang_banyak                 = [60, 66, 70, 74]
         self.hutang_sedang                = [50, 56, 58, 63]
         self.hutang_sedikit           = [30, 42, 47, 52]
@@ -339,12 +339,12 @@ class KepalaKeluarga:
         if(self.low[0] == 0 and self.med[0] == 0 and self.hig[0] == 0):
             return 0
         else:
-            return ((k[0] * self.low[0]) + (k[1] * self.med[0]) + (k[2] * self.hig[0]))/(self.low[0] + self.med[0] + self.hig[0])
+            return ((k[0] * self.low[0]) + (k[1] * self.med[0]) + (k[2] * self.hig[0]))/(k[0] + k[1] + k[2])
 
     def defuzzyfication(self):
         y = self.sugeno()
         print(f'{self.no}, {y}')
-        if y > 6:
+        if y > 0.065:
             self.kelayakan = True
         else:
             self.kelayakan = False

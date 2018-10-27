@@ -22,6 +22,8 @@ def csv_writer():
         for kk in kepalaKeluargas:
             if kk.kelayakan:
                 writer.writerow([kk.no, kk.pendapatan, kk.hutang])
+                
+
 
 def main():
     csv_reader()
@@ -31,7 +33,6 @@ def main():
         kk.fungsi_anggota_hutang()
         kk.inferensi()
         kk.defuzzyfication()
-        # counter_kk += 1
         # kk.fuzzy_rules()
         # print(f'\t{kk.no} \tPendapatan : \t{kk.nilai_derajat_keanggotaan_pendapatan_SB, kk.nilai_derajat_keanggotaan_pendapatan_Baik, kk.nilai_derajat_keanggotaan_pendapatan_Biasa, kk.nilai_derajat_keanggotaan_pendapatan_TB, kk.nilai_derajat_keanggotaan_pendapatan_STB}')
         # print(f'\t{kk.no} \tHutang : \t{kk.nilai_derajat_keanggotaan_hutang_SB, kk.nilai_derajat_keanggotaan_hutang_banyak, kk.nilai_derajat_keanggotaan_hutang_sedang, kk.nilai_derajat_keanggotaan_hutang_TB, kk.nilai_derajat_keanggotaan_hutang_STB}')
@@ -40,6 +41,12 @@ def main():
 
     csv_writer()
     print("Done processs")
+    counter_total = 0
+    for kk in kepalaKeluargas:
+        if kk.kelayakan:
+            counter_total += 1
+    
+    print(counter_total)
+
 if __name__ == "__main__":
     main()
-    # print(max([2,1]))
